@@ -31,5 +31,20 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+THEME = '../theme/pelican-blueidea'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+
+
+DISPLAY_PAGES_ON_MENU = True
+
+DISPLAY_CATEGORIES_ON_MENU = True
+
+DISPLAY_CATEGORIES_ON_SUBMENU = False
+
+DISPLAY_CATEGORIES_ON_POSTINFO = False
+
+DISPLAY_AUTHOR_ON_POSTINFO = False
+
+DISPLAY_SEARCH_FORM = False
