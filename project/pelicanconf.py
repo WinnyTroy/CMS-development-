@@ -19,6 +19,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+STATIC_PATHS = ['static', 'content']
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
@@ -31,20 +33,13 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
-THEME = '../theme/pelican-blueidea'
+THEME = '../foundation-default-colours'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
-
-
-DISPLAY_PAGES_ON_MENU = True
-
-DISPLAY_CATEGORIES_ON_MENU = True
-
-DISPLAY_CATEGORIES_ON_SUBMENU = False
-
-DISPLAY_CATEGORIES_ON_POSTINFO = False
-
-DISPLAY_AUTHOR_ON_POSTINFO = False
-
-DISPLAY_SEARCH_FORM = False
+FOUNDATION_FRONT_PAGE_FULL_ARTICLES = False
+FOUNDATION_ALTERNATE_FONTS = False
+FOUNDATION_TAGS_IN_MOBILE_SIDEBAR = False
+FOUNDATION_NEW_ANALYTICS = False
+FOUNDATION_ANALYTICS_DOMAIN = ''
+FOUNDATION_FOOTER_TEXT = 'Powered by <a href="http://getpelican.com">Pelican</a> and <a href="http://foundation.zurb.com/">Zurb Foundation</a>. Theme by <a href="http://hamaluik.com">Kenton Hamaluik</a>.'
+FOUNDATION_PYGMENT_THEME = 'monokai'
