@@ -4,10 +4,12 @@ font-size: 50px;
 background-image: url("./static/img/index.png");
 }
 body{
-background-color:black;
+background-color:grey;
 
 }
 .left li {
 margin-left: 200px;
 color: blue;
 }
+
+.main-section
