@@ -20,8 +20,8 @@ Released   : 20100928
 {% if FEED_RSS %}
 <link href="{{ SITEURL }}/{{ FEED_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
 {% endif %}
-	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css">
-	<link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.css">
+<link href="{{ SITEURL }}/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
 
 </head>
 <body>
@@ -29,30 +29,35 @@ Released   : 20100928
 	<div id="page">
 		<div id="page-bgtop">
 			<div id="page-bgbtm">
+				<div id="logo">
+					<img alt="Alt Text" src="/images/logo.png" />
+                    <span><a href="{{ SITEURL }}">{{ SITENAME }}</a></span>
+				</div>
+
 				{% block content %}
                                 {% endblock %}
 				<div id="sidebar">
-					<div id="logo">
-						<h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
-						{% if SITESUBTITLE %}<p>{{ SITESUBTITLE }}</p>{% endif %}
-					</div>
 					<div id="menu">
 						<ul>
-							<li {% if page_name =="index" %}class="current_page_item"{% endif %}><a href="{{ SITEURL }}">Home</a></li>
-							<li {% if page_name =="archives" %}class="current_page_item"{% endif %}><a href="{{ SITEURL }}/archives.html">Archives</a></li>
+							<li {% if page_name =="index" %}class="current_page_item"{% endif %}>
+								<a href="{{ SITEURL }}/index.html">Home</a></li>
+							<li {% if page_name =="archives" %}class="current_page_item"{% endif %}>
+								<a href="{{ SITEURL }}/archives.html">Archives</a></li>
 							{% if DISPLAY_PAGES_ON_MENU %}
-                                                        {% for page in PAGES %}
-                                                            <li {% if page_name == page_title %}class="current_page_item"{% endif %}><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-                                                        {% endfor %}
-                                                        {% endif %}
+                            {% for page in PAGES %}
+                            <li {% if page_name == page_title %}class="current_page_item"{% endif %}>
+                                <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+                            {% endfor %}
+                            {% endif %}
 						</ul>
 					</div>
 					<ul>
 						<li>
-							<h2>Catégories</h2>
+							<h2>Categories</h2>
 							<ul>
 							{% for cat, null in categories %}
-								 <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+								 <li {% if cat == category %}class="active"{% endif %}>
+                                     <a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 							{% endfor %}
 							</ul>
 						</li>
@@ -84,8 +89,8 @@ Released   : 20100928
 						        <h2>Tags</h2>
 						        <ul>
 						        {% for tag, articles in tags %}
-                                                                <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
-                                                        {% endfor %}
+                                	<li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+                                {% endfor %}
 						        </ul>
 						</li>
 						
@@ -100,11 +105,12 @@ Released   : 20100928
 	<!-- end #page -->
 
 <div id="footer">
-	<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">CSS Templates</a>.</p>
+	<p>Copyright (c) 2016. SmsLeopard.com All rights reserved. Design by <a href="https://www.smsleopard.com/">SmsLeopard</a>.</p>
 	<p>Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>, which takes great advantages of <a href="http://python.org">python</a>.
 </p>
 </div>
 {% include 'analytics.html' %}
 <!-- end #footer -->
+</div>
 </body>
 </html>
