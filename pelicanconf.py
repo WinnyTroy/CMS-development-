@@ -35,7 +35,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 2
 
-THEME = '../brownstone'
+THEME = 'themes/brownstone'
 
 
 
