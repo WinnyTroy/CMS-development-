@@ -43,10 +43,7 @@ a {
 a:hover {
 }
 
-#wrapper {
-	margin: 0 auto;
-	padding: 0;
-}
+
 
 /* Header */
 
@@ -86,7 +83,7 @@ a:hover {
 
 
 #logo img {
-	width: 35%;
+	width: 50%;
 	clear: right;
 }
 
@@ -131,67 +128,10 @@ a:hover {
 	color: #34312C;
 }
 
-/* Menu */
-
-#menu {
-	width: 280px;
-	margin: 0px auto 20px auto;
-	padding: 0;
-}
-
-#menu ul {
-	margin: 0;
-	padding: 10px 0px 0px 0px;
-	list-style: none;
-	line-height: normal;
-}
-
-#menu li {
-	border-bottom: 1px dashed #191918;
-}
-
-#menu a {
-	display: block;
-	width: 260px;
-	height: 27px;
-	margin: 4px 0px;
-	padding: 8px 0px 0px 20px;
-	text-decoration: none;
-	text-transform: capitalize;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	font-weight: normal;
-	color: #FFF;
-}
-
-#menu a:hover, #menu .current_page_item a {
-	background: url('../images/img06.jpg') no-repeat left top; 
-	text-decoration: none;
-}
-
-#menu .current_page_item a {
-}
-
-/* Page */
-
-#page {
-	width: 1320px;
-	margin: 0 auto;
-
-}
-
-#page-bgbtm {
-	overflow: hidden;
-	width: 1000px;
-	padding: 20px 0px 20px 0px;
-
-}
-
 /* Content */
 
 #content {
-	float: right;
-	width: 50%;
+padding-right: 50px;
 }
 
 .post {
@@ -287,12 +227,7 @@ h2.title {
 /* Sidebar */
 
 #sidebar {
-	float: left;
-	width: 350px;
-	padding: 0px 0px 80px 15px;
-	background-color: #797979;
-
-
+	padding: 0px 0px 0px 15px;
 }
 
 #sidebar ul {
@@ -301,28 +236,12 @@ h2.title {
 	list-style: none;
 }
 
-#sidebar li {
-	margin: 0;
-	padding: 0;
-}
-
 #sidebar li ul {
 	margin: 5px 20px 5px 5px;
 	padding-bottom: 30px;
-}
-
-#sidebar li li {
 	line-height: 35px;
 	border-bottom: 1px dashed #191918;
 	border-left: none;
-}
-
-#sidebar li li span {
-	display: block;
-	margin-top: -20px;
-	padding: 0;
-	font-size: 11px;
-	font-style: italic;
 }
 
 #sidebar li li a {
@@ -393,4 +312,8 @@ h2.title {
 
 #footer a {
 	color: blue;
+}
+
+#google_translate_element {
+    margin-top: 50px;
 }
